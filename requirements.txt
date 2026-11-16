@@ -1,0 +1,9 @@
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+joblib
+h5py
+tensorflow
+python-docx

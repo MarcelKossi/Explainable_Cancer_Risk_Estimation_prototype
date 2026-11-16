@@ -1,0 +1,230 @@
+{
+ "sklearn_version": "1.9.1",
+ "drop_one": {
+  "LR": {
+   "all five": 0.9805269277522329,
+   "without radius": 0.9809100998890121,
+   "without texture": 0.9683050578722054,
+   "without perimeter": 0.9799772739284393,
+   "without area": 0.9804582210242587,
+   "without smoothness": 0.9556233814280428
+  },
+  "HGB": {
+   "all five": 0.9748850483589662,
+   "without radius": 0.9712938005390835,
+   "without texture": 0.9552719200887904,
+   "without perimeter": 0.9742455472755139,
+   "without area": 0.9738333069076687,
+   "without smoothness": 0.9570186565192114
+  }
+ },
+ "single_split_5feat": {
+  "n_test": 114,
+  "frac_ge_97_seeds_0_999": 0.018,
+  "frac_ge_97_other_seed_blocks": [
+   0.023,
+   0.021,
+   0.024,
+   0.019
+  ],
+  "test_size_0.25": {
+   "n_test": 143,
+   "mean": 0.9283426573426573,
+   "frac_ge_97": 0.008
+  },
+  "test_size_0.3": {
+   "n_test": 171,
+   "mean": 0.9275497076023391,
+   "frac_ge_97": 0.008
+  },
+  "expected_best_of_k": {
+   "1": 0.9284736842105262,
+   "2": 0.9405771929824561,
+   "5": 0.9525948358068866,
+   "10": 0.9596908964696635,
+   "20": 0.9654681590260726,
+   "50": 0.9714291043976668
+  }
+ },
+ "binomial_tail_111_of_114": 0.04275777962364846,
+ "calibration": {
+  "5feat": {
+   "LR": {
+    "mean_predicted": 0.3728948142260009,
+    "prevalence": 0.37258347978910367,
+    "n_prob_exactly_0_or_1": 0,
+    "clip_1e-06": {
+     "slope": 1.1171439783884554,
+     "intercept_joint": 0.04918128455135147,
+     "intercept_slope_fixed_1": -0.0055556477758904824
+    },
+    "clip_0.001": {
+     "slope": 1.1205572557707342,
+     "intercept_joint": 0.05097305005141721,
+     "intercept_slope_fixed_1": -0.004914157379784809
+    },
+    "clip_0.01": {
+     "slope": 1.1756578955671897,
+     "intercept_joint": 0.06840138339474244,
+     "intercept_slope_fixed_1": -0.012629736338436334
+    }
+   },
+   "SVM": {
+    "mean_predicted": 0.37189068780848245,
+    "prevalence": 0.37258347978910367,
+    "n_prob_exactly_0_or_1": 0,
+    "clip_1e-06": {
+     "slope": 1.0374636955508436,
+     "intercept_joint": 0.03535725921170817,
+     "intercept_slope_fixed_1": 0.013233495182441888
+    },
+    "clip_0.001": {
+     "slope": 1.0382188927070402,
+     "intercept_joint": 0.03624752660060533,
+     "intercept_slope_fixed_1": 0.013773943441599016
+    },
+    "clip_0.01": {
+     "slope": 1.0558447357667335,
+     "intercept_joint": 0.05528975406467475,
+     "intercept_slope_fixed_1": 0.024530685618009702
+    }
+   },
+   "RF": {
+    "mean_predicted": 0.37151669595782066,
+    "prevalence": 0.37258347978910367,
+    "n_prob_exactly_0_or_1": 100,
+    "clip_1e-06": {
+     "slope": 1.0660518894537647,
+     "intercept_joint": 0.05607846422719254,
+     "intercept_slope_fixed_1": 0.018599883340551463
+    },
+    "clip_0.001": {
+     "slope": 1.0722767477047919,
+     "intercept_joint": 0.05980073882990014,
+     "intercept_slope_fixed_1": 0.01919102165431445
+    },
+    "clip_0.01": {
+     "slope": 1.13320332366486,
+     "intercept_joint": 0.08663841738543694,
+     "intercept_slope_fixed_1": 0.01332303812747801
+    }
+   },
+   "HGB": {
+    "mean_predicted": 0.36557125019273723,
+    "prevalence": 0.37258347978910367,
+    "n_prob_exactly_0_or_1": 0,
+    "clip_1e-06": {
+     "slope": 0.5710407056710106,
+     "intercept_joint": -0.05704315661150879,
+     "intercept_slope_fixed_1": 0.2592834444372753
+    },
+    "clip_0.001": {
+     "slope": 0.6227658111318425,
+     "intercept_joint": -0.03280882736590874,
+     "intercept_slope_fixed_1": 0.2518992492069482
+    },
+    "clip_0.01": {
+     "slope": 0.7714027349326897,
+     "intercept_joint": -0.0179162161318504,
+     "intercept_slope_fixed_1": 0.15741816491076355
+    }
+   }
+  },
+  "30feat": {
+   "LR": {
+    "mean_predicted": 0.37118659270623855,
+    "prevalence": 0.37258347978910367,
+    "n_prob_exactly_0_or_1": 2,
+    "clip_1e-06": {
+     "slope": 1.1792001100797427,
+     "intercept_joint": 0.18007972717047774,
+     "intercept_slope_fixed_1": 0.05586205405430318
+    },
+    "clip_0.001": {
+     "slope": 1.1931167033771735,
+     "intercept_joint": 0.18739016413375068,
+     "intercept_slope_fixed_1": 0.05452157774867807
+    },
+    "clip_0.01": {
+     "slope": 1.370656762207783,
+     "intercept_joint": 0.2683536377605733,
+     "intercept_slope_fixed_1": 0.007954565766351542
+    }
+   },
+   "SVM": {
+    "mean_predicted": 0.3741884436973786,
+    "prevalence": 0.37258347978910367,
+    "n_prob_exactly_0_or_1": 0,
+    "clip_1e-06": {
+     "slope": 1.1607997526244163,
+     "intercept_joint": -0.0387020142929997,
+     "intercept_slope_fixed_1": -0.0609398227660616
+    },
+    "clip_0.001": {
+     "slope": 1.168801915772567,
+     "intercept_joint": -0.03350089444992096,
+     "intercept_slope_fixed_1": -0.057129951363191246
+    },
+    "clip_0.01": {
+     "slope": 1.2909224930414358,
+     "intercept_joint": -0.04420110623067363,
+     "intercept_slope_fixed_1": -0.09185738539661154
+    }
+   },
+   "RF": {
+    "mean_predicted": 0.3738025776215583,
+    "prevalence": 0.37258347978910367,
+    "n_prob_exactly_0_or_1": 57,
+    "clip_1e-06": {
+     "slope": 1.4434678464386093,
+     "intercept_joint": 0.12252496083588814,
+     "intercept_slope_fixed_1": -0.025717620344724506
+    },
+    "clip_0.001": {
+     "slope": 1.444407293551211,
+     "intercept_joint": 0.12277395684561818,
+     "intercept_slope_fixed_1": -0.02578333248297183
+    },
+    "clip_0.01": {
+     "slope": 1.5161130009210455,
+     "intercept_joint": 0.137559346869903,
+     "intercept_slope_fixed_1": -0.03859294193196263
+    }
+   },
+   "HGB": {
+    "mean_predicted": 0.36377986073449914,
+    "prevalence": 0.37258347978910367,
+    "n_prob_exactly_0_or_1": 0,
+    "clip_1e-06": {
+     "slope": 0.6386075479398783,
+     "intercept_joint": 0.2195116547897124,
+     "intercept_slope_fixed_1": 0.6518623221758648
+    },
+    "clip_0.001": {
+     "slope": 0.7391544482751001,
+     "intercept_joint": 0.26291133331456035,
+     "intercept_slope_fixed_1": 0.608754885531846
+    },
+    "clip_0.01": {
+     "slope": 1.0034958260594977,
+     "intercept_joint": 0.30313237767022105,
+     "intercept_slope_fixed_1": 0.2984569275470125
+    }
+   }
+  }
+ },
+ "fusion_control": {
+  "sizes": {
+   "breast": 569,
+   "prostate": 100,
+   "lung": 4000,
+   "fourth": 4000
+  },
+  "majority_share_subsampled": 0.46141423462913833,
+  "lookup_rule_on_missingness_pattern": 1.0,
+  "HGB_native_missing": 1.0,
+  "LR_zero_filled_with_indicators": 1.0,
+  "RF_zero_filled_no_indicators": 1.0,
+  "LR_zero_filled_no_indicators": 0.4796400968969893
+ }
+}

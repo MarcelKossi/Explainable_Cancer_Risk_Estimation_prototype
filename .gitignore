@@ -1,0 +1,43 @@
+# Internal working notes (not part of the public material)
+CORRECTIONS_NIVEAU_1.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# Office temporary files
+~$*
+*.tmp
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local data that must not be redistributed (Kaggle tables, BreakHis images)
+data/
+*.csv
+!scaler_columns.csv
+*.zip
+*.rar
+
+manuscript.tex
+manuscript.docx
+make_docx.py

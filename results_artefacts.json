@@ -1,0 +1,358 @@
+{
+ "scaler": {
+  "n_columns": 39,
+  "columns_by_count": {
+   "100": [
+    "id",
+    "radius",
+    "texture",
+    "perimeter",
+    "area",
+    "smoothness",
+    "compactness",
+    "symmetry",
+    "fractal_dimension"
+   ],
+   "569": [
+    "mean_radius",
+    "mean_texture",
+    "mean_perimeter",
+    "mean_area",
+    "mean_smoothness"
+   ],
+   "23658": [
+    "Survival_Months",
+    "Performance_Status",
+    "Blood_Pressure_Systolic",
+    "Blood_Pressure_Diastolic",
+    "Blood_Pressure_Pulse",
+    "Hemoglobin_Level",
+    "White_Blood_Cell_Count",
+    "Platelet_Count",
+    "Albumin_Level",
+    "Alkaline_Phosphatase_Level",
+    "Alanine_Aminotransferase_Level",
+    "Aspartate_Aminotransferase_Level",
+    "Creatinine_Level",
+    "LDH_Level",
+    "Calcium_Level",
+    "Phosphorus_Level",
+    "Glucose_Level",
+    "Potassium_Level",
+    "Sodium_Level",
+    "Smoking_Pack_Years"
+   ],
+   "167497": [
+    "Healthcare_Costs",
+    "Incidence_Rate_per_100K",
+    "Mortality_Rate_per_100K"
+   ],
+   "191155": [
+    "Age",
+    "Tumor_Size_mm"
+   ]
+  },
+  "n_columns_by_count": {
+   "100": 9,
+   "569": 5,
+   "23658": 20,
+   "167497": 3,
+   "191155": 2
+  },
+  "blocks": {
+   "breast": 569,
+   "prostate": 100,
+   "lung": 23658,
+   "colorectal": 167497
+  },
+  "total_rows": 191824,
+  "shares": {
+   "breast": 0.0029662607390107598,
+   "prostate": 0.0005213112019351072,
+   "lung": 0.12333180415380765,
+   "colorectal": 0.8731806239052464
+  },
+  "shared_count_check": {
+   "lung_plus_colorectal": 191155,
+   "count_of_Age": 191155
+  },
+  "uniform_implied_bounds": {
+   "Healthcare_Costs": [
+    24989.30325059894,
+    119915.03294646727
+   ],
+   "Incidence_Rate_per_100K": [
+    9.507017762135522,
+    59.55610575649466
+   ],
+   "Mortality_Rate_per_100K": [
+    4.5379626908503905,
+    29.509787418106782
+   ],
+   "Survival_Months": [
+    0.5491790416930087,
+    119.17843952285176
+   ],
+   "Performance_Status": [
+    -0.4485904727628276,
+    4.448421396763166
+   ],
+   "Blood_Pressure_Systolic": [
+    89.39451813167527,
+    179.5302430484752
+   ],
+   "Blood_Pressure_Diastolic": [
+    59.517756209429784,
+    109.4338035166671
+   ],
+   "Blood_Pressure_Pulse": [
+    59.58626777559317,
+    99.58432990806563
+   ],
+   "Hemoglobin_Level": [
+    10.01406053934653,
+    17.98621272342384
+   ],
+   "White_Blood_Cell_Count": [
+    3.4806769722560933,
+    9.990596989105123
+   ],
+   "Platelet_Count": [
+    149.35965980811935,
+    450.37530382973546
+   ],
+   "Albumin_Level": [
+    2.999727855927336,
+    4.998234829217297
+   ],
+   "Alkaline_Phosphatase_Level": [
+    30.10578126769387,
+    119.9494267035595
+   ],
+   "Alanine_Aminotransferase_Level": [
+    5.101633814043602,
+    39.90772080072763
+   ],
+   "Aspartate_Aminotransferase_Level": [
+    10.109557586009245,
+    50.15689520607048
+   ],
+   "Creatinine_Level": [
+    0.5014746844036215,
+    1.4974433008257793
+   ],
+   "LDH_Level": [
+    99.85787401059525,
+    249.61127611576467
+   ],
+   "Calcium_Level": [
+    8.014280347624933,
+    10.507946872454514
+   ],
+   "Phosphorus_Level": [
+    2.4927624609301224,
+    4.992779870134311
+   ],
+   "Glucose_Level": [
+    69.87020086006399,
+    149.92090578260462
+   ],
+   "Potassium_Level": [
+    3.497470071923971,
+    4.993821082722489
+   ],
+   "Sodium_Level": [
+    135.01478254234357,
+    145.04164833151336
+   ],
+   "Smoking_Pack_Years": [
+    -0.09128311127096822,
+    99.91847188644
+   ]
+  }
+ },
+ "three_source_table": {
+  "rows": 24327,
+  "shares": {
+   "breast": 0.023389649360792537,
+   "lung": 0.9724996917005796,
+   "prostate": 0.004110658938627862
+  }
+ },
+ "model": {
+  "keras_version_saved": "3.11.3",
+  "layers": [
+   [
+    "InputLayer",
+    "symptom_input"
+   ],
+   [
+    "InputLayer",
+    "image_input"
+   ],
+   [
+    "Dense",
+    "dense_2"
+   ],
+   [
+    "Dense",
+    "dense_4"
+   ],
+   [
+    "Dropout",
+    "dropout"
+   ],
+   [
+    "Dropout",
+    "dropout_1"
+   ],
+   [
+    "Dense",
+    "dense_3"
+   ],
+   [
+    "Dense",
+    "dense_5"
+   ],
+   [
+    "Concatenate",
+    "concatenate"
+   ],
+   [
+    "Dense",
+    "dense_6"
+   ],
+   [
+    "Dropout",
+    "dropout_2"
+   ],
+   [
+    "Dense",
+    "dense_7"
+   ]
+  ],
+  "dense_layers": {
+   "dense_2": {
+    "glorot_uniform_limit": 0.2140129125019265,
+    "kernel_max_abs": 0.21056710183620453,
+    "kernel_sd": 0.12945280969142914,
+    "uniform_sd_for_limit": 0.1235604126430431,
+    "kernel_nan": 256,
+    "kernel_nan_per_input_row": [
+     128,
+     128,
+     0
+    ],
+    "bias_all_zero": true,
+    "adam_kernel_moments_all_zero": true,
+    "adam_bias_moments_all_zero": true
+   },
+   "dense_3": {
+    "glorot_uniform_limit": 0.1767766952966369,
+    "kernel_max_abs": 0.17675061523914337,
+    "kernel_sd": 0.10226576775312424,
+    "uniform_sd_for_limit": 0.10206207261596577,
+    "kernel_nan": 0,
+    "kernel_nan_per_input_row": null,
+    "bias_all_zero": true,
+    "adam_kernel_moments_all_zero": true,
+    "adam_bias_moments_all_zero": true
+   },
+   "dense_4": {
+    "glorot_uniform_limit": 0.0625,
+    "kernel_max_abs": 0.06249968707561493,
+    "kernel_sd": 0.03610046207904816,
+    "uniform_sd_for_limit": 0.036084391824351615,
+    "kernel_nan": 0,
+    "kernel_nan_per_input_row": null,
+    "bias_all_zero": true,
+    "adam_kernel_moments_all_zero": true,
+    "adam_bias_moments_all_zero": true
+   },
+   "dense_5": {
+    "glorot_uniform_limit": 0.125,
+    "kernel_max_abs": 0.12499389052391052,
+    "kernel_sd": 0.07224660366773605,
+    "uniform_sd_for_limit": 0.07216878364870323,
+    "kernel_nan": 0,
+    "kernel_nan_per_input_row": null,
+    "bias_all_zero": true,
+    "adam_kernel_moments_all_zero": true,
+    "adam_bias_moments_all_zero": true
+   },
+   "dense_6": {
+    "glorot_uniform_limit": 0.13693063937629152,
+    "kernel_max_abs": 0.13692858815193176,
+    "kernel_sd": 0.07898302376270294,
+    "uniform_sd_for_limit": 0.07905694150420949,
+    "kernel_nan": 0,
+    "kernel_nan_per_input_row": null,
+    "bias_all_zero": true,
+    "adam_kernel_moments_all_zero": true,
+    "adam_bias_moments_all_zero": true
+   },
+   "dense_7": {
+    "glorot_uniform_limit": 0.2140129125019265,
+    "kernel_max_abs": 0.21383754909038544,
+    "kernel_sd": 0.1204749196767807,
+    "uniform_sd_for_limit": 0.1235604126430431,
+    "kernel_nan": 0,
+    "kernel_nan_per_input_row": null,
+    "bias_all_zero": false,
+    "adam_kernel_moments_all_zero": true,
+    "adam_bias_moments_all_zero": false
+   }
+  },
+  "output_bias": [
+   -1.5092463493347168,
+   2.2530343532562256,
+   -3.191082715988159
+  ],
+  "softmax_of_output_bias": [
+   0.02260779955506868,
+   0.9731864253931973,
+   0.004205775051733787
+  ],
+  "adam_updates": 36510,
+  "update_count_fits_80pct_of_three_source_table": [
+   {
+    "train_rows": 19461,
+    "batch_size": 16,
+    "steps_per_epoch": 1217,
+    "epochs": 30
+   },
+   {
+    "train_rows": 19462,
+    "batch_size": 16,
+    "steps_per_epoch": 1217,
+    "epochs": 30
+   }
+  ]
+ },
+ "queries": {
+  "keras_version_used": "3.15.1",
+  "tensorflow_version_used": "2.21.0",
+  "zero_image_5000_score_triples": {
+   "distinct_outputs": 1,
+   "output": [
+    0.022607801482081413,
+    0.9731864333152771,
+    0.004205774981528521
+   ]
+  },
+  "fixed_image_2000_score_triples": {
+   "max_abs_difference_between_outputs": 0.0
+  },
+  "random_images_5000": {
+   "top_class_counts": [
+    0,
+    5000,
+    0
+   ],
+   "top_probability_min": 0.9568383097648621,
+   "top_probability_median": 0.9832748770713806,
+   "top_probability_max": 0.9944222569465637,
+   "any_nan": false
+  }
+ }
+}
